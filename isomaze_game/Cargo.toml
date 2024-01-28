@@ -1,0 +1,13 @@
+[package]
+name = "isomaze_game"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/jojoqc/isomaze"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy = { version = "0.12", features = ["dynamic_linking"] }
+bevy_framepace = "0.14"
+isomaze_lib = { path="../isomaze_lib", version = "0.1.0" }

@@ -1,0 +1,42 @@
+[package]
+name = "isomaze_lib"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/jojoqc/isomaze"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+isomaze_macros = { path = "../isomaze_macros", version = "0.1.0" }
+
+#misc
+rand = { version = "0.8", features = ["small_rng"] }
+rand_distr = "0.4"
+indexmap = "2.1"
+petitset = "0.2"
+serde = "1.0.195"
+derive_more = "0.99.17"
+itertools = "0.12"
+anyhow = "1.0.79"
+serde_json = "1.0.111"
+# This must match the version specified in the bevy_utils crate
+# See: https://crates.io/crates/bevy_utils/dependencies
+hashbrown = { version = "0.14", features = ["rayon"] }
+rayon = "1.8.1"
+
+#bevy
+bevy = { version = "0.12", features = ["dynamic_linking"] }
+bevy_mod_billboard = { git = "https://github.com/robtfm/bevy_mod_billboard", branch = "bevy12" }
+noisy_bevy = "0.5"
+#leafwing-input-manager = "0.11"
+#leafwing_abilities = "0.6"
+hexx = { version = "0.12", features = ["ser_de"] }
+bevy_mod_raycast = "0.16"
+bevy_screen_diagnostics = "0.4"
+bevy_framepace = "0.14"
+thiserror = "1.0.56"
+
+
+[dev-dependencies]
+criterion = "0.5"
