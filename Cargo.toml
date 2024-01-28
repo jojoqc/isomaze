@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+members = ["isomaze_game", "isomaze_lib", "isomaze_macros", "tools/ci"]
+default-members = ["isomaze_game", "isomaze_lib"]
+
+
+# Enable max optimizations for dependencies, but not for our code:
+[profile.dev.package."*"]
+opt-level = 3
