@@ -1,7 +1,7 @@
 use bevy::prelude::*;
 use bevy::window::{PresentMode, WindowMode, WindowPlugin};
 use bevy_framepace::FramepacePlugin;
-use isomaze_lib::graphics::geometry;
+use isomaze_lib::graphics::render::render_2d;
 
 fn main() {
     App::new()
@@ -15,9 +15,10 @@ fn main() {
             ..Default::default()
         }))
         .add_plugins(FramepacePlugin)
+        .add_systems(Startup, render_2d::setup)
         // .add_systems(StartUp, setup)
         // .add_systems(Update,(system, update_config))
         .run();
 }
 
-fn setup() {}
+//fn setup() {}

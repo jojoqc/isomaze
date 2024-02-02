@@ -31,7 +31,7 @@ bevy_mod_billboard = { git = "https://github.com/robtfm/bevy_mod_billboard", bra
 noisy_bevy = "0.5"
 #leafwing-input-manager = "0.11"
 #leafwing_abilities = "0.6"
-hexx = { version = "0.12", features = ["ser_de"] }
+hexx = { version = "0.14", features = ["ser_de"] }
 bevy_mod_raycast = "0.16"
 bevy_screen_diagnostics = "0.4"
 bevy_framepace = "0.14"
